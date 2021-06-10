@@ -22,6 +22,7 @@ public class OpenDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_open_detail);
+        getSupportActionBar().hide();
         mWebView = findViewById(R.id.webview);
 
         loaingSpinner = findViewById(R.id.loading_spinner_detail);
