@@ -34,7 +34,7 @@ import info.techasylum.bhukamp.model.EarthQuakeAdapter;
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<EarthQuake>> {
     public static final String TAG = MainActivity.class.getName();
     private static final String SAMPLE_JSON_RESPONSE_URL="https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=magnitude&limit=20";
-    private static final String USGS_REQUEST_URL = "https://earthquake.usg.gov/fdsnws/event/1/query";
+    private static final String USGS_REQUEST_URL = "https://earthquake.usgs.gov/fdsnws/event/1/query";
     public static final int LOADER_ID=1;
     public static final String DETAIL_URL="detail-url";
     ListView mListView;
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         }
         else {
 
-
+            emptySateTextView.setText("something went wrong");
         }
     }
 
