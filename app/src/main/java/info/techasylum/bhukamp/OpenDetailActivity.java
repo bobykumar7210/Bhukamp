@@ -60,6 +60,7 @@ public class OpenDetailActivity extends AppCompatActivity {
         // If it wasn't the Back key or there's no web page history, bubble up to the default
         // system behavior (probably exit the activity)
         return super.onKeyDown(keyCode, event);
+        //adding add tag
     }
 
 }
